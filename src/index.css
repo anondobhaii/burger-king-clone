@@ -1,13 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: flameReg;
+  src: url("./assets/fonts/Flame-Regular.woff");
+}
+@font-face {
+  font-family: flameSanReg;
+  src: url("./assets/fonts/FlameSans-Regular.woff");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: flameReg;
+  min-height: 100vh;
+  background: #f5ebdc;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.flamesan {
+  font-family: flameSanReg !important;
+}
+
+.active {
+  color: #d62300;
+}
+.active img {
+  filter: invert(16%) sepia(80%) saturate(4352%) hue-rotate(16deg)
+    brightness(100%) contrast(107%);
+}
+.c1 {
+  filter: invert(97%) sepia(71%) saturate(339%) hue-rotate(304deg)
+    brightness(102%) contrast(92%);
+}
+
+.linkborder{
+  border-right: 1px solid #f5ebdc;
+}
+
+.linkborder:last-child{
+  border: none;
+}
+
+
